@@ -8,3 +8,6 @@ def index(request):
 
 def another(request):
     return render(request, 'home.html')
+
+def ann(request):
+    return render(request, 'index.html')
