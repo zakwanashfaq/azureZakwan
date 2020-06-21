@@ -5,3 +5,6 @@ from django.http import request, HttpResponse
 def index(request):
     return HttpResponse("Backend good!"
                         "<h1><p>Congrats on deployment to azure</p></h1>")
+
+def another(request):
+    return render(request, 'home.html')
