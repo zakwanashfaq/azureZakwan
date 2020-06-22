@@ -10,4 +10,4 @@ def another(request):
     return render(request, 'home.html')
 
 def ann(request):
-    return render(request, 'index.html')
+    return render(request, 'index2.html')

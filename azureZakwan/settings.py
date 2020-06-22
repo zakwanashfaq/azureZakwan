@@ -54,7 +54,8 @@ ROOT_URLCONF = 'azureZakwan.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                 os.path.join(BASE_DIR, 'cloudtemplate')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -119,3 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'cloudtemplate')
+
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
